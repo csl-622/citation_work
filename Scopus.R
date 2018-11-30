@@ -1,5 +1,5 @@
 ## version 0.4
-#taken from https://github.com/christopherBelter/scopusAPI and modified
+
 searchByString <- function(string, content = "standard", myStart = 0, retCount = 25, retMax = Inf, mySort = "-coverDate", cursor = "*", outfile) {
 	if (!content %in% c("complete", "standard")) {
 		stop("Invalid content value. Valid content values are 'complete', and 'standard'")
@@ -164,3 +164,5 @@ extractXML <- function(theFile) {
 	theDF <- data.frame(scopusID, doi, pmid, authors, affiliations, countries, year, articletitle, journal, volume, issue, pages, keywords, abstract, ptype, timescited, stringsAsFactors = FALSE)
 	return(theDF)
 }
+
+#taken from https://github.com/christopherBelter/scopusAPI and modified
