@@ -14,6 +14,7 @@ while ui<8 :
     total=0
     regexp = re.compile(r'omput')
     
+   
     while i<(ui+1)*20 :
         dummy=str(i)+".txt"
         file_r= open(filename+dummy, "r")
