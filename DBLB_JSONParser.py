@@ -7,6 +7,7 @@ i=0
 id="000000000000"
 
 file = open("DBLP_EDGES0.txt","w")
+
 with open("dblp-ref/dblp-ref-0.json", encoding="utf8") as f:
     for line in f:
         dictionary = json.loads(line)
